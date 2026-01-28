@@ -1,0 +1,31 @@
+body {
+    background-color:aliceblue;
+    font-size: 22px;
+}
+
+html {
+    background-color:burlywood;
+}
+
+p {
+    background-color: darkcyan;
+    color: cornsilk;
+    border: dashed 10px orange;
+    /* text-align: center; */
+    /* width: 700px; */
+    /* internal spacing */
+    padding: 20px 60px 80px 100px;
+    /* external spacing */
+    margin: 50px;
+}
+
+.centered-text {
+    text-align: center;
+    padding: 20px;
+}
+
+.special {
+    background-color: darkkhaki;
+    color: brown;
+    border-radius: 100%;
+}
