@@ -23,29 +23,83 @@
             }
 
             h1 {
-                font-size: 45px;
+                font-size: 44px;
             }
-            
+
+            /* .infobox1 {
+                position: absolute;
+                left: 400px;
+            } */
+            .pos {
+                position: absolute;
+                right: 300px;
+                top: 130px;
+            }
+
+            .pos2 {
+                position: absolute;
+                left: 300px;
+                top: 50px;
+            }
+
+            ol {
+                margin: 5px 0 0 0;
+            }
+
+        /* *** ADD THIS CLASS TO DETAILS TO CENTER IT */
+            .deetstoggle {
+                position: relative;
+            }
+
+        /* ^^^ only use these for instances with wide text areas vvv */ 
+
+        /* *** ADD THIS CLASS IN A DIV AROUND CONTENTS OF DETAILS TO CENTER IT */
+            .centerdeets {
+                position: absolute;
+                width: max-content;
+                transform: translateX(-50%);
+                left: 50%;
+            }
+
+        /* invisible scrollbar */
+            .scroll-color {
+                scrollbar-color: black black;
+            }
+
+            ol.centered {
+                display: inline-block;
+                text-align: left;
+            }
 
         </style>
     </head>
     <body>
         <h1>D<img src='images/core.PNG' width='30'>RECT<img src='images/whole.png' width='30'>RY</h1>
 
-        <!-- <p>text choose 1 below to continue</p> -->
-        i really <button onclick="alert('really')">really</button> like jazz and rock
+        <!-- <details class="pos deetstoggle">
+            <summary>about
+            </summary>
+            <div class="centerdeets scroll-color"><p style="height: 150px; width: 280px; overflow: auto;">one of my biggest pastimes is listening to music; my favorite genres are rock, r&b, jazz, and any combination of the former. i especially like a japanese artist named ringo sheena, along with her band tokyo incidents. it's hard (in a good way) to put a name or genre to what she does, but i have seen her compared to bjork, who she has said she is inspired by. i picked out a few of my personal favorites from her & her band below, with music videos if i could find them. the songs i chose lean towards jazz/rock/orchestral, but there is more electronic/"experimental" music too ( eg. box of goldfish). "camouflage" and "a distress" are some of my absolute favorites.</p>
+            </div></details> -->
 
-
-        <ol>
-            <li><img src='images/peach.png' width='50'> camouflage</li> <br>
+        <!-- <details class="pos2 deetstoggle">
+            <summary>aboutt
+            </summary>
+            <div class="centerdeets scroll-color"><p style="height: 150px; width: 280px; overflow: auto;">one of my biggest pastimes is listening to music; my favorite genres are rock, r&b, jazz, and any combination of the former. i especially like a japanese artist named ringo sheena, along with her band tokyo incidents. it's hard (in a good way) to put a name or genre to what she does, but i have seen her compared to bjork, who she has said she is inspired by. i picked out a few of my personal favorites from her & her band below, with music videos if i could find them. the songs i chose lean towards jazz/rock/orchestral, but there is more electronic/"experimental" music too ( eg. box of goldfish). "camouflage" and "a distress" are some of my absolute favorites.</p>
+            </div></details> -->
+            
+        <ol class="centered">
+            <li><img src='images/peach.png' width='50'> <a href="https://youtu.be/9A2-4bTYOC8?si=qKRW-fR42Xh96W6B">camouflage</a></li> <br>
             <!-- <li><img src='images/fish3.PNG' width='50'> <a href='fish.html'>box of goldfish</a></li> <br> -->
-            <li><img src='images/fish3.PNG' width='50'> box of goldfish</li> <br>
-            <li><img src='images/cig.png' width='50'> your breakfast</li> <br>
-            <li><img src='images/mirror.png' width='55'> ego-ism</li> <br>
-            <li><img src='images/shipwreck.png' width='45'> a distress</li> <br>
-            <li><img src='images/cassis.png' width='45'> chastity at midnight</li> <br>
-            <li><img src='images/sal.png' width='60'> the rat's nest</li>
+            <li><img src='images/fish3.PNG' width='50'> <a href="https://youtu.be/IZG3iN22U-I?si=Eqt6ddLa7cLJcOhE">box of goldfish</a></li> <br>
+            <li><img src='images/cig.png' width='50'> <a href="https://youtu.be/b7x0cYEBTZQ?si=BSlNg2o2JuZhfGJR">your breakfast</a></li> <br>
+            <li><img src='images/mirror.png' width='55'> <a href="https://youtu.be/b0ZndbczwGg?si=CNyjkIVEiy_AwtoH">ego-ism</a></li> <br>
+            <li><img src='images/shipwreck.png' width='45'> <a href="https://youtu.be/YPGupG0ZgVM?si=Okee44sApk63QxMY">a distress</a></li> <br>
+            <li><img src='images/cassis.png' width='45'> <a href="https://youtu.be/yU66LgmTgPE?si=8jPVEIVwcVoDriHQ">chastity at midnight</a></li> <br>
+            <li><img src='images/sal.png' width='60'> <a href="https://youtu.be/TlgDgNDSZYE?si=sz79fPZmDpYmBSu-">the rat's-nest</a></li>
         </ol>
+        <br>
+        <br>
         <br>
         <a href="index.html">back to start</a>
 
