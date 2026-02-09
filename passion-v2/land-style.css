@@ -1,0 +1,95 @@
+
+
+/* style for LANDING */
+
+
+/* .box:hover img {
+    transform: scale(1.05);
+    } */
+
+
+body {
+    margin: 30px;
+    font-family: sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+a {
+    color: gray;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.parent {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+}
+
+.parent > div {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    box-shadow: 2.5px 2.5px 1.8px rgba(0, 0, 0, 0.3);
+}
+
+.parent img {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    /* contain = resize to fit, fill = squishes to fit*/
+    overflow: hidden;
+}
+
+.imgwrap {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    height: 100px;
+    width: 100px;
+}
+
+div > a {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    position: absolute;
+    visibility: hidden;
+    /* transition: opacity 0.2s, visibility 0.2s; for a choppy "wave" effect */
+}
+
+/* reveals text while box is hovered over */
+.imgwrap:hover a {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* hides image while box is hovered over */
+.imgwrap:hover img {
+    visibility: hidden;    
+}
+
+.centerbox {
+    display: flex;
+    justify-content: center;
+}
+
+/* makes images themselves pop out (?)
+.imgwrap:hover img {
+    transform: scale(2)
+} */
+
+/* makes entire box pop out (?)
+.imgwrap:hover {
+    transform: scale(2)
+} */
