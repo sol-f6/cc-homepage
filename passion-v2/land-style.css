@@ -9,56 +9,83 @@
 
 
 body {
+    background-color: rgb(248, 247, 247);
     margin: 30px;
-    font-family: sans-serif;
-    font-size: 12px;
+    font-family: MADE Tommy Soft Light;
+    font-size: 9px;
     text-align: center;
 }
 
 a {
-    color: gray;
+    color: black;
 }
 
 h1 {
     font-size: 50px;
+    font-family: Tropical Avenue;
+    /* text-shadow: 2px 2px 2px rgb(144, 144, 144); */
+}
+
+/* ***if grid columns/rows are not the same dimensions as .imgwrap then layout will be off center*** */
+
+.fontsize {
+    font-size: 10.5px;
 }
 
 .parent {
     display: grid;
     gap: 10px;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 110px 110px 110px;
+    grid-template-rows: 110px 110px 110px;
 }
 
 .parent > div {
     padding: 0px;
     margin: 0px;
     border: 0px;
-    background-color: white;
+    background-color: rgb(248, 247, 247);
     display: grid;
     place-items: center;
-    box-shadow: 2.5px 2.5px 1.8px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 2.5px 2.5px 1.8px rgba(0, 0, 0, 0.3); */
+    border-style: dotted;
+    border-width: 1.5px;
+    border-color: black;
 }
 
 .parent img {
     padding: 0px;
     margin: 0px;
     border: 0px;
-    width: 80%;
-    height: 80%;
+    width: 75%;
+    height: 75%;
     object-fit: contain;
     /* contain = resize to fit, fill = squishes to fit*/
     overflow: hidden;
 }
 
+.scroll-color {
+    scrollbar-color: rgb(248, 247, 247) rgb(248, 247, 247);
+    scrollbar-width: none;
+}
+
+/* ^^vv for blurb, disguises scrollbar and styles scrollable text*/
+.blurb {
+    padding: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-gutter: stable both-edges;
+}
+
+/* used for boxes with links/no scrolling text */
 .imgwrap {
     padding: 0px;
     margin: 0px;
     border: 0px;
-    height: 100px;
-    width: 100px;
+    height: 110px;
+    width: 110px; /* changing width and height here changes image scaling */
 }
 
+/* only affects boxes with links as the contents*/
 div > a {
     padding: 0px;
     margin: 0px;
@@ -68,8 +95,22 @@ div > a {
     /* transition: opacity 0.2s, visibility 0.2s; for a choppy "wave" effect */
 }
 
+.show {
+    padding: 5px;
+    margin: 0px;
+    border: 0px;
+    visibility: hidden;
+    /* used only for blurb box; image is styled inline so "position" values don't conflict */
+}
+
 /* reveals text while box is hovered over */
+/* only affects boxes with links as the contents*/
 .imgwrap:hover a {
+    visibility: visible;
+    opacity: 1;
+}
+
+.imgwrap:hover .show {
     visibility: visible;
     opacity: 1;
 }
