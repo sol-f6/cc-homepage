@@ -1,0 +1,4 @@
+/* wild-card rule, affects EVERYTHING, be careful */
+* {
+    box-sizing: border-box;
+}
