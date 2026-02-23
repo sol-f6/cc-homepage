@@ -5,6 +5,30 @@
 
 body {
     background-color: black;
-    color: aliceblue; /* white or something?*/
 }
 
+
+.container {
+    /* position: relative;
+    top: 60px; */
+    background-color: rgb(0, 0, 0);
+    width: 350px;
+    height: 350px;
+    display: grid;
+    grid-template-rows: 70px 70px 70px 70px 70px 70px 70px 25px;
+    grid-template-columns: 90px 90px 90px 90px 90px 90px;
+    gap: 15px;
+}
+
+.moon {
+    position: absolute;
+    right: 250px;
+    top: 100px;
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+}
+
+.window {
+    background-color: yellow;
+}
