@@ -20,15 +20,19 @@ body {
     gap: 15px;
 }
 
+.dim {
+    background-color: rgb(35,44,60);
+}
+
 .moon {
     position: absolute;
     right: 250px;
     top: 100px;
-    background-color: yellow;
+    /* background-color: rgb(255,196,0); */
     width: 100px;
     height: 100px;
 }
 
 .window {
-    background-color: yellow;
+    background-color: rgb(255,196,0);;
 }
