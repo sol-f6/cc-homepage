@@ -19,12 +19,13 @@ body {
 
 .container {
     height: 100vh;
+    scale:0.6 0.9;
     position: relative;
     overflow: hidden;
 }
 
 .blink-in {
-    animation: blink 20s 1 alternate-reverse;
+    animation: blink 15s 1 alternate-reverse;
 }
 
 .mover {
