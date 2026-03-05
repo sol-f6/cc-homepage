@@ -25,7 +25,7 @@ body {
 }
 
 .blink-in {
-    animation: blink 15s 1 alternate-reverse;
+    animation: blink 2s 1 alternate-reverse ease-in;
 }
 
 .mover {
@@ -43,7 +43,7 @@ body {
 } */
 
 .step0 {
-    animation: slideR 2s infinite linear;
+    animation: slideR 4.2s infinite linear;
 }
 
 .step1 {
@@ -87,7 +87,7 @@ body {
 .step8 {
     top: 240px;
     color: rgb(255, 166, 0);
-    animation: slideR 3.8s infinite linear;
+    animation: slideR 3.9s infinite linear;
 }
 
 .step9 {
@@ -188,7 +188,7 @@ body {
     }
 }
 
-@keyframes flicker {
+@keyframes flick {
     0%{
         opacity: 100%;
     }
@@ -198,9 +198,11 @@ body {
     } */
 
     100%{
-        opacity: 90%;
+        opacity: 80%;
     }
 }
+
+
 
 @keyframes blink {
     0% {
@@ -208,8 +210,27 @@ body {
         scale:1 1; /* when using 2 values with the scale property, make sure there is no space in front of first number*** */
     }
 
-    100% {
-        /* height: 0; */
+    10% {
+        scale:0 1;
+    }
+
+    25%{
+        scale:0 0;
+    }
+ 
+    50%{
+        scale:0 0;
+    }
+
+    75%{
+        scale:0 0;
+    }
+
+    90%{
+        scale:0 0;
+    }
+
+    100%{
         scale:0 0;
     }
 }
