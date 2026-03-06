@@ -1,0 +1,18 @@
+@font-face {
+    font-family: Alte Haas Grotesk;
+    src: url(AlteHaasGroteskBold.ttf);
+}
+
+body {
+    font-family: Alte Haas Grotesk;
+    color: black;
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+
+/* h1 {
+    text-align: center;
+} */
