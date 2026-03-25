@@ -92,6 +92,7 @@ button {
 
 .ltblue {
     background: rgb(87, 136, 226);
+    color: white;
 }
 
 .blue {
@@ -100,7 +101,7 @@ button {
 }
 
 .brown {
-    background: rgb(100, 70, 53);
+    background: rgb(80, 55, 41);
 }
 
 .beige {
