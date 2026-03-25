@@ -1,0 +1,163 @@
+/* wild-card rule, affects EVERYTHING, be careful */
+* {
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+    font-size: 90px;
+    animation: pulse infinite 2.5s ease-in-out alternate-reverse;
+}
+
+button {
+  margin-bottom: 5px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  box-shadow: 2px 3px 1px 0.1px rgb(98, 98, 98);
+  /* font-weight: bold; */
+  cursor: pointer;
+}
+
+@keyframes pulse {
+    0% {
+        scale: 0.90;
+    }
+
+
+    100% {
+        scale: 1.1;
+    }
+}
+
+.wt {
+    color: white;
+}
+
+.box {
+  height: 50px;
+  width: 50px;
+  /* border: 1px solid; */
+}
+
+.clue {
+    position: absolute;
+    display: flex;
+    /* z-index: 3; */
+    top: 30px;
+    left: 30px;
+    width: 200px;
+    height: 150px;
+}
+
+.result {
+    position: absolute;
+    display: flex;
+    /* z-index: 3; */
+    top: 30px;
+    right: 30px;
+    width: 150px;
+    height: 150px;
+
+    display: none;
+}
+
+.red {
+    background: rgb(214, 48, 76);
+}
+
+.rose {
+  background: rgb(231, 150, 164);
+}
+
+.orange {
+    background: rgb(234, 137, 39);
+}
+
+.yellow {
+    background: rgb(255, 201, 99);
+}
+
+.lime {
+    background: rgb(145, 233, 116);
+}
+
+.jade {
+    background: rgb(48, 130, 113);
+}
+
+.ltblue {
+    background: rgb(87, 136, 226);
+}
+
+.blue {
+    background: rgb(41, 93, 189);
+    color: white;
+}
+
+.brown {
+    background: rgb(100, 70, 53);
+}
+
+.beige {
+    background: rgb(191, 168, 135);
+}
+
+.black {
+    background: rgb(1, 4, 23);
+}
+
+.white {
+    background: rgb(238, 233, 234);
+}
+
+.gray {
+    background: rgb(201, 201, 201);
+}
+
+.sidebar {
+    position: absolute;
+    bottom: 30px;
+    width: 1264px;
+    height: 100px;
+    display: flex;
+    /* background-color: yellow; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* align-content: center; */
+    gap: 10px;
+    
+    /* align-items: ; */
+}
+
+.sidebar::selection {
+    background: transparent;
+}
+
+.center {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    /* background-color: pink; */
+    justify-content: center;
+}
+
+.canvas {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 50px;
+  gap: 0px;
+  width: 450px;
+  height: 450px;
+  overflow: hidden;
+}
