@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> lvl 1 </title>
+        <title> puzzlepaint </title>
         <link rel="stylesheet" href="main.css">
         <link rel="shortcut icon" type="image/png" href="images/favicon.png">
         <meta charset="UTF-8" />
@@ -9,42 +9,23 @@
     </head>
     <body>
 
-    <div class="sidebar">
-        <button onclick="window.location.href='landing.html'" class="gray">bck</button>
-        &nbsp; &nbsp;
-        <!-- colors -->
-        <button class="add-red red">1</button>
-        <button class="add-rose rose">2</button>
-        <button class="add-orange orange">3</button>
-        <button class="add-yellow yellow">4</button>
-        <button class="add-lime lime">5</button>
-        <button class="add-jade jade wt">6</button>
-        <button class="add-ltblue ltblue">7</button>
-        <button class="add-blue blue">8</button>
-        <button class="add-brown brown wt">9</button>
-        <button class="add-beige beige">10</button>
-        <button class="add-black black wt">11</button>
-        <button class="add-white white">12</button>
-        <button class="add-gray gray">13</button>
-        
-        &nbsp; &nbsp;
-        <!-- other -->
-        <button class="clear-btn gray">del</button>
-        <button class="reveal gray">ans</button>
+        <div class="center" style = "width: 1270px; position: absolute; top: 100px">
+            <h1>puzzlepaint</h1>
+        </div>
+        <div class="center" style="width: 1270px; position: absolute; top: 300px">
+            <button onclick="window.location.href='index.html'" class="gray">lvl 1</button> &nbsp;
+            <button onclick="window.location.href='lvl2.html'" class="gray">lvl 2</button> &nbsp;
+            <button onclick="window.location.href='lvl3.html'" class="gray">lvl 3</button> &nbsp;
+            <button onclick="window.location.href='lvl4.html'" class="gray">lvl 4</button> &nbsp;
 
-    </div>
+            <button onclick="window.location.href='lvl5.html'" class="gray">lvl 5</button> &nbsp;
+            <button onclick="window.location.href='lvl6.html'" class="gray">lvl 6</button> &nbsp;
+            <button onclick="window.location.href='lvl7.html'" class="gray">lvl 7</button> &nbsp;
+            <button onclick="window.location.href='lvl8.html'" class="gray">lvl 8</button>
+            &nbsp; &nbsp;
+            <button onclick="window.location.href='free.html'" class="gray"> free mode</button>
+        </div>
 
-   <!-- real image goes here -->
-    <div class="result" style="width: 220px; height: 220px;"><img src="images/comedian.jpg"></div>
-
-    <!-- where blocks go -->
-    <div class="center">    
-        <div class="canvas"></div>
-    </div>
-
-    <!-- 9x9 number-only grid -->
-    <div class="clue"><img src="images/banana-clue.png"><div>
-    
     <script src="jquery-4.0.0.min.js"></script>
     <script src="jquery-ui.min.js"></script>
     <script src="main.js"></script>
