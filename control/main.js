@@ -77,7 +77,7 @@ $(".clear-btn").click(function(){
 
 $(".draggable").draggable(
     // keeps draggable elements from scrolling the viewport when draggd to the edge of .container
-    {containment: ".container", scroll: false}
+    {containment: "window", scroll: false}
 );
 
 // reveal artworks
