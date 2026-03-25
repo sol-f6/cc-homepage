@@ -73,13 +73,26 @@ $(".clear-btn").click(function(){
     $(".canvas").children().remove();
 });
 
-// $(".clear-one").click(function(){
-//     $(".canvas").children().slice(0, -1);
-// });
+// make blocks draggable in free play?
+
+$(".draggable").draggable(
+    // keeps draggable elements from scrolling the viewport when draggd to the edge of .container
+    {containment: ".container", scroll: false}
+);
+
+// reveal artworks
 
 $(".reveal").click(
     function() {
-        $(".result").show();
+        $(".result").fadeIn();
         $(".reveal").hide();
+    }
+)
+
+// show secrets on front page
+$(".secrets-btn").click(
+    function() {
+        $(".secrets").fadeIn();
+        $(".secrets-btn").hide();
     }
 )
