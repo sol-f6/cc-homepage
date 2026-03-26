@@ -69,8 +69,12 @@ $(".add-gray").click(function () {
   grayBox.clone().appendTo(".canvas");
 });
 
+// $(".clear-btn").click(function(){
+//     $(".canvas").children().remove();
+// });
+
 $(".clear-btn").click(function(){
-    $(".canvas").children().remove();
+    $(".canvas").children(".box:last-child").remove();
 });
 
 // make blocks draggable in free play?
